@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+
+html {
+    font-family: "Poppins", system-ui, sans-serif;
+    font-weight: 500;
+    scroll-behavior: smooth;
+}
+
+.font-hero {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* Custom Cursor Styles */
+* {
+    cursor: url('/cursor/pikachu_cursor_normal.png'), auto;
+}
+
+a,
+button,
+[role="button"],
+input[type="submit"],
+input[type="button"],
+input[type="checkbox"],
+input[type="radio"],
+select,
+label,
+.cursor-pointer {
+    cursor: url('/cursor/pikachu_cursor_pointer.png'), pointer;
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #083344; /* cyan-950 */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #22d3ee 0%, #06b6d4 50%, #0891b2 100%);
+    /* cyan gradient */
+    border-radius: 5px;
+    border: 2px solid #083344;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #67e8f9 0%, #22d3ee 50%, #06b6d4 100%);
+    /* lighter cyan on hover */
+}
+
+::-webkit-scrollbar-corner {
+    background: #083344;
+}
+
+/* Firefox scrollbar */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #06b6d4 #083344;
+}

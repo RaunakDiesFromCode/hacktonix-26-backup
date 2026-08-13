@@ -1,0 +1,35 @@
+# Cache all pages for 1 hour
+/*
+  Cache-Control: public, max-age=3600, s-maxage=3600
+
+# Cache static assets (JS, CSS) for 1 hour
+/assets/*
+  Cache-Control: public, max-age=3600, s-maxage=3600, immutable
+
+# Cache images for 1 hour
+/*.webp
+  Cache-Control: public, max-age=3600, s-maxage=3600
+/*.jpg
+  Cache-Control: public, max-age=3600, s-maxage=3600
+/*.jpeg
+  Cache-Control: public, max-age=3600, s-maxage=3600
+/*.png
+  Cache-Control: public, max-age=3600, s-maxage=3600
+/*.gif
+  Cache-Control: public, max-age=3600, s-maxage=3600
+/*.svg
+  Cache-Control: public, max-age=3600, s-maxage=3600
+
+# Cache fonts for 1 hour
+/*.woff
+  Cache-Control: public, max-age=3600, s-maxage=3600
+/*.woff2
+  Cache-Control: public, max-age=3600, s-maxage=3600
+/*.ttf
+  Cache-Control: public, max-age=3600, s-maxage=3600
+
+# Cache videos for 1 hour
+/*.mp4
+  Cache-Control: public, max-age=3600, s-maxage=3600
+/*.webm
+  Cache-Control: public, max-age=3600, s-maxage=3600
